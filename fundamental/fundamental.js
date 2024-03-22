@@ -34,7 +34,7 @@ else{}
 // push
 
 
-const numbers = [89,35,70,10];
+const numbers = [89,35,50,10];
 
 numbers[0]=56;
 
