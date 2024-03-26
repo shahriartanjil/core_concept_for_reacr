@@ -27,7 +27,7 @@ const age=person2.map(p => p.age);
 // এরে এর প্রত্যকটা ইলিমেন্ট এর জন্য লুপ থ্রো করতে হবে বাট কোন কিছু রিটার্ন করবে না তার জন্য 
 
 person2.forEach((p) => {
-    console.log(p.name);
+    // console.log(p.name);
 })
 
 
@@ -39,10 +39,22 @@ const search= person2.filter((p) => p.name.includes("n"));
 
 // console.log(search);
 
+const number = [10,20,30,40,50,60,70,8,90,1000];
 
+const fiftyUp = number.filter((n) => n > 50)
+
+// console.log(fiftyUp);
+
+// find method
+// arrayOFobject
 const singleElement = person2.find(p => p.name.includes("n"));
 
 // console.log(singleElement);
+
+// create a new array without john
+
+const remaining=person2.filter((p)=>p.name!="john");
+// console.log(remaining);
 
 
 
@@ -51,10 +63,3 @@ const singleElement = person2.find(p => p.name.includes("n"));
 // copy old products and then add product
 const newData= { name: "tony", age: 100, phone: 103022323, house: '12355a' }
 const newProducts=[...person2,newData]
-
-
-
-// create a new array without john
-
-const remaining=person2.filter(p=>p.name!="john");
-console.log(remaining);
